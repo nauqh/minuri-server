@@ -1,0 +1,13 @@
+[project]
+name = "minuri-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]",
+    "pydantic-settings",
+    "python-dotenv>=1.2.2",
+    "requests",
+    "serpapi>=1.0.2",
+]
