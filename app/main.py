@@ -13,7 +13,7 @@ class InterestQuery(BaseModel):
     location: str #should be at city level, If several locations match the location requested, we'll pick the most popular one. 
 
 
-@app.post("/interests")
+@app.post("/api/nearby-interest")
 def get_nearby_interest(data: InterestQuery):
     try:
         res = fetch_nearby_interest(data.query, data.location)

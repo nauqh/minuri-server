@@ -1,6 +1,6 @@
 import serpapi
 import json
-from config import get_settings
+from app.config import get_settings
 
 def fetch_nearby_interest(query: str, location: str) -> list[dict[str, str]]:
     """
@@ -16,6 +16,11 @@ def fetch_nearby_interest(query: str, location: str) -> list[dict[str, str]]:
             "engine": "google",
             "q": query,
             "location": location,
+            "gl": "au",
+            "google_domain": "google.com.au"
         }
     )
-    return payload
+    res = payload["local_results"]
+    with open("test_results.json", "w") as f:
+        json.dump(res, f)
+    return res
