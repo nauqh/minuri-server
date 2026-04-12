@@ -17,11 +17,9 @@ def fetch_nearby_interest(query: str, location: str) -> list[dict[str, str]]:
             "q": query,
             "location": location,
             "gl": "au",
-            "google_domain": "google.com.au"
+            "google_domain": "google.com.au",
             "tbm": "lcl"
         }
     )
     res = payload["local_results"]
-    with open("test_results.json", "w") as f:
-        json.dump(res, f)
     return res

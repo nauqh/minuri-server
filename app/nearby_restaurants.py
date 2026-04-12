@@ -4,7 +4,7 @@ from typing import Any
 
 import serpapi
 import json
-from config import get_settings
+from app.config import get_settings
 
 
 MELBOURNE_SCOPE = "Melbourne, Victoria, Australia"
