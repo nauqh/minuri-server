@@ -6,15 +6,8 @@ from pydantic import BaseModel
 
 
 app = FastAPI()
-#used for getting nearby interest details from SerpApi Google Local results. 
-class InterestQuery(BaseModel):
-    query: str #
-    location: str #should be at city level, If several locations match the location requested, we'll pick the most popular one. 
-#used for getting population data from https://data.melbourne.vic.gov.au/ (City of melbourne opendata)
-class populationQuery(BaseModel):
-    location:str#Suburb name, e.g. "Carlton" should start with capital letter
-    year:str
 
+#getting a list of nearby interest based on the query and location.
 @app.get("/api/nearby-interest")
 async def get_nearby_interest(query: str, location: str="Melbourne"):
     try:
@@ -22,7 +15,8 @@ async def get_nearby_interest(query: str, location: str="Melbourne"):
         return res
     except Exception as e:
         return {"error": str(e)}
-
+    
+#getting population of certain suburb and year, then sum up the population of age group 15-19 and 20-24 as the final result.
 @app.get("/api/population")
 #https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22Carlton%22&refine=age%3A%22Age%2020-24%22&refine=year%3A%222026%22
 #getting pop of age group 15-19 and 20-24 of certain suburb and year, then sum them up as the final result.
@@ -38,7 +32,8 @@ async def get_population(location: str, year: str= 2026):
         return {"population": pop, "location": location, "year": year}
     except Exception as e:
         return {"error": str(e)}
-
+    
+#getting a list of possible suburbs in 2026, which is based on the population forecast data of 2026 of the city of melbourne.
 @app.get("/api/get-Suburb")
 def get_suburb():
     '''
