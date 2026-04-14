@@ -15,27 +15,27 @@ class populationQuery(BaseModel):
     location:str#Suburb name, e.g. "Carlton" should start with capital letter
     year:str
 
-@app.post("/api/nearby-interest")
-def get_nearby_interest(data: InterestQuery):
+@app.get("/api/nearby-interest")
+async def get_nearby_interest(query: str, location: str="Melbourne"):
     try:
-        res = fetch_nearby_interest(data.query, data.location)
+        res = fetch_nearby_interest(query, location)
         return res
     except Exception as e:
         return {"error": str(e)}
 
-@app.post("/api/population")
+@app.get("/api/population")
 #https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22Carlton%22&refine=age%3A%22Age%2020-24%22&refine=year%3A%222026%22
 #getting pop of age group 15-19 and 20-24 of certain suburb and year, then sum them up as the final result.
-def get_population(data: populationQuery):
+async def get_population(location: str, year: str= 2026):
     age2 = "20-24"
     age1 = "15-19"
-    api1 = f"https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22{data.location}%22&refine=age%3A%22Age%20{age1}%22&refine=year%3A%22{data.year}%22"
-    api2 = f"https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22{data.location}%22&refine=age%3A%22Age%20{age2}%22&refine=year%3A%22{data.year}%22"
+    api1 = f"https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22{location}%22&refine=age%3A%22Age%20{age1}%22&refine=year%3A%22{year}%22"
+    api2 = f"https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22{location}%22&refine=age%3A%22Age%20{age2}%22&refine=year%3A%22{year}%22"
     try:
         res1 = requests.get(api1).json()["results"]
         res2 = requests.get(api2).json()["results"]
         pop = sum(item['value'] for item in res1) + sum(item['value'] for item in res2)
-        return {"population": pop, "location": data.location, "year": data.year}
+        return {"population": pop, "location": location, "year": year}
     except Exception as e:
         return {"error": str(e)}
 
