@@ -1,6 +1,11 @@
 import serpapi
-import json
-from app.config import get_settings
+
+from ..config import get_settings
+
+
+class NearMeServiceError(Exception):
+    pass
+
 
 def fetch_nearby_interest(query: str, location: str) -> list[dict[str, str]]:
     """
@@ -18,8 +23,14 @@ def fetch_nearby_interest(query: str, location: str) -> list[dict[str, str]]:
             "location": location,
             "gl": "au",
             "google_domain": "google.com.au",
-            "tbm": "lcl"
+            "tbm": "lcl",
         }
     )
-    res = payload["local_results"]
-    return res
+    return payload["local_results"]
+
+
+def search_near_me(query: str, location: str = "Melbourne"):
+    try:
+        return fetch_nearby_interest(query, location)
+    except Exception as exc:
+        raise NearMeServiceError(str(exc)) from exc
