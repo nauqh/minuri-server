@@ -76,8 +76,22 @@ The loader fetches the CSV from the upstream source, filters to VIC suburbs in G
 - `GET /api/nearby-interest`
 - `GET /api/population`
 - `GET /suburb`
+- `GET /suburb/larger-region`
 
 These routes reflect the current backend surface and may change as the project grows.
+
+### Suburb Endpoints
+
+- `GET /suburb`
+  - Query params:
+    - `limit` (optional, default `100`, min `1`, max `1000`)
+    - `larger_region` (optional SA3 name filter)
+  - Response:
+    - `{ "suburbs": [{ "locality", "postcode", "state", "long", "lat", "larger_region" }] }`
+- `GET /suburb/larger-region`
+  - Returns all distinct SA3 names from suburb records.
+  - Response:
+    - `{ "larger_regions": ["Bayside", "Melbourne City", "..."] }`
 
 ## Notes
 

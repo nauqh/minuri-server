@@ -13,7 +13,7 @@ import csv
 import requests
 
 from app.database import SessionLocal
-from app.models import Suburb, SuburbDemographics
+from app.models import Suburb
 
 SOURCE_CSV_URL = (
     "https://raw.githubusercontent.com/matthewproctor/"
@@ -70,7 +70,6 @@ def main() -> None:
     session = SessionLocal()
     try:
         # Clear existing suburbs
-        session.query(SuburbDemographics).delete(synchronize_session=False)
         session.query(Suburb).delete(synchronize_session=False)
 
         # Insert new suburbs

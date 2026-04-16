@@ -1,15 +1,27 @@
-import requests
+from sqlalchemy import func, or_
+from sqlalchemy.orm import Session
+
+from ..models import SuburbDemographic
 
 
-def get_population_service(location: str, year: str = 2026):
-    age2 = "20-24"
-    age1 = "15-19"
-    api1 = f"https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22{location}%22&refine=age%3A%22Age%20{age1}%22&refine=year%3A%22{year}%22"
-    api2 = f"https://data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/city-of-melbourne-population-forecasts-by-small-area-2020-2040/records?limit=20&refine=geography%3A%22{location}%22&refine=age%3A%22Age%20{age2}%22&refine=year%3A%22{year}%22"
-    try:
-        res1 = requests.get(api1).json()["results"]
-        res2 = requests.get(api2).json()["results"]
-        pop = sum(item["value"] for item in res1) + sum(item["value"] for item in res2)
-        return {"population": pop, "location": location, "year": year}
-    except Exception as e:
-        return {"error": str(e)}
+def get_population_service(db: Session, location: str) -> dict:
+    location_query = location.strip()
+    row = (
+        db.query(func.sum(SuburbDemographic.erp_2025))
+        .filter(
+            or_(
+                SuburbDemographic.sa2_name.ilike(f"%{location_query}%"),
+                SuburbDemographic.sa3_name.ilike(f"%{location_query}%"),
+                SuburbDemographic.sa4_name.ilike(f"%{location_query}%"),
+                SuburbDemographic.gccsa_name.ilike(f"%{location_query}%"),
+            )
+        )
+        .first()
+    )
+
+    population = int(row[0] or 0)
+    return {
+        "population": population,
+        "location": location,
+        "year": "2025",
+    }

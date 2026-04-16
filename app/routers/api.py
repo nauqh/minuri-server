@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query
 
 from ..config import get_settings
+from ..database import DbSession
 from ..services.near_me import NearMeServiceError, search_near_me
 from ..services.population_service import get_population_service
 
@@ -23,5 +24,8 @@ async def get_nearby_interest(
 
 
 @router.get("/population")
-async def get_population(location: str, year: str = 2026):
-    return get_population_service(location, year)
+async def get_population(
+    db: DbSession,
+    location: str,
+):
+    return get_population_service(db, location)

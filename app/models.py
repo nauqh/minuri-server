@@ -3,14 +3,12 @@ from sqlalchemy import (
     Column,
     DateTime,
     Float,
-    ForeignKey,
     Integer,
     String,
     Text,
     UniqueConstraint,
     func,
 )
-from sqlalchemy.orm import relationship
 
 from .database import Base
 
@@ -29,13 +27,6 @@ class Suburb(Base):
     lat = Column(Float, nullable=True)
     lng = Column(Float, nullable=True)
     sa3_name = Column(String(120), nullable=True, index=True)
-
-    demographics = relationship(
-        "SuburbDemographics",
-        back_populates="suburb",
-        uselist=False,
-        cascade="all, delete-orphan",
-    )
 
     def __repr__(self):
         return f"<Suburb(id={self.id}, name='{self.name}', postcode='{self.postcode}')>"
@@ -63,22 +54,21 @@ class GuideArticle(Base):
         return f"<GuideArticle(id={self.id}, slug='{self.slug}', category='{self.category}')>"
 
 
-class SuburbDemographics(Base):
+class SuburbDemographic(Base):
     __tablename__ = "suburb_demographics"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    suburb_id = Column(Integer, ForeignKey("suburbs.id"),
-                       nullable=False, unique=True, index=True)
-    population_18_25 = Column(Integer, nullable=True)
-    total_population = Column(Integer, nullable=True)
-    source = Column(String(120), nullable=True)
-    updated_at = Column(DateTime(timezone=True),
-                        nullable=False, server_default=func.now())
-
-    suburb = relationship("Suburb", back_populates="demographics")
+    sa2_code = Column(String(20), nullable=False, unique=True, index=True)
+    sa2_name = Column(String(120), nullable=False, index=True)
+    sa3_name = Column(String(120), nullable=False, index=True)
+    sa4_name = Column(String(120), nullable=False, index=True)
+    gccsa_name = Column(String(120), nullable=False, index=True)
+    erp_2024 = Column(Integer, nullable=True)
+    erp_2025 = Column(Integer, nullable=True)
+    erp_change_no = Column(Integer, nullable=True)
+    erp_change_pct = Column(Float, nullable=True)
+    area_km2 = Column(Float, nullable=True)
+    pop_density_2025 = Column(Float, nullable=True)
 
     def __repr__(self):
-        return (
-            f"<SuburbDemographics(suburb_id={self.suburb_id}, "
-            f"population_18_25={self.population_18_25})>"
-        )
+        return f"<SuburbDemographic(sa2_code='{self.sa2_code}', sa2_name='{self.sa2_name}')>"
