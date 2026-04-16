@@ -1,5 +1,3 @@
-from typing import Literal
-
 from fastapi import APIRouter, HTTPException, Query
 
 from ..config import get_settings
@@ -16,7 +14,6 @@ router = APIRouter(
 async def get_nearby_interest(
     query: str = Query(..., min_length=1),
     location: str = Query("Melbourne"),
-    mode: Literal["default"] = "default",
 ):
     _ = get_settings()
     try:
