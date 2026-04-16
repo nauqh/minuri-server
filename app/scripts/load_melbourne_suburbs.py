@@ -50,6 +50,7 @@ def load_rows(reader: csv.DictReader) -> list[dict]:
                 "state": "VIC",
                 "lat": _float_cell(row.get("Lat_precise")) or _float_cell(row.get("lat")),
                 "lng": _float_cell(row.get("Long_precise")) or _float_cell(row.get("long")),
+                "sa2_code": (row.get("SA2_CODE_2021") or "").strip() or None,
                 "sa3_name": (
                     (row.get("sa3name") or "").strip()
                     or None

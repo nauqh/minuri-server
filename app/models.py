@@ -3,6 +3,7 @@ from sqlalchemy import (
     Column,
     DateTime,
     Float,
+    ForeignKey,
     Integer,
     String,
     Text,
@@ -26,6 +27,12 @@ class Suburb(Base):
     state = Column(String(10), nullable=False, default="VIC")
     lat = Column(Float, nullable=True)
     lng = Column(Float, nullable=True)
+    sa2_code = Column(
+        String(20),
+        ForeignKey("suburb_demographics.sa2_code"),
+        nullable=True,
+        index=True,
+    )
     sa3_name = Column(String(120), nullable=True, index=True)
 
     def __repr__(self):
