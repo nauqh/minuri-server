@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Query
 
 from ..database import DbSession
-from ..schemas.suburb import SuburbListResponse
-from ..services.suburb_service import get_suburb_service
+from ..schemas.suburb import LargerRegionListResponse, SuburbListResponse
+from ..services.suburb_service import get_larger_regions_service, get_suburb_service
 
 router = APIRouter(
     prefix="/suburb",
@@ -21,3 +21,8 @@ def list_suburbs(
         limit=limit,
         larger_region=larger_region,
     )
+
+
+@router.get("/larger-region", response_model=LargerRegionListResponse)
+def list_larger_regions(db: DbSession):
+    return get_larger_regions_service(db)

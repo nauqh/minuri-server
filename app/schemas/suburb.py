@@ -12,3 +12,7 @@ class SuburbItemResponse(BaseModel):
 
 class SuburbListResponse(BaseModel):
     suburbs: list[SuburbItemResponse]
+
+
+class LargerRegionListResponse(BaseModel):
+    larger_regions: list[str]
