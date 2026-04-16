@@ -49,8 +49,6 @@ def search_near_me(query: str, suburb: str = "Melbourne") -> list[dict]:
             {
                 "engine": "google",
                 "q": search_query,
-                # Use the standard Google results page local pack, which includes
-                # local_results.places[*].gps_coordinates more consistently.
                 "location": "Melbourne, Victoria, Australia",
                 "gl": "au",
                 "google_domain": "google.com.au",
@@ -59,7 +57,6 @@ def search_near_me(query: str, suburb: str = "Melbourne") -> list[dict]:
             }
         )
         places = _extract_places(payload)
-        print(json.dumps(places, indent=2))
         return [_normalize_place(place) for place in places]
     except Exception as exc:
         raise NearMeServiceError(str(exc)) from exc
