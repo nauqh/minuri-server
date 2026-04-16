@@ -16,6 +16,17 @@
 
 Minuri Server is the backend service for Minuri. It is built with FastAPI and currently powers APIs for location-based discovery and supporting data. The backend is expected to evolve over time, so this README is intentionally focused on local development and the current shape of the project.
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Local Development](#local-development)
+- [Environment Variables](#environment-variables)
+- [Data Sources and Import](#data-sources-and-import)
+- [Data Flow](#data-flow)
+- [Project Structure](#project-structure)
+- [Current API Overview](#current-api-overview)
+- [Notes](#notes)
+
 ## Getting Started
 
 ```bash
