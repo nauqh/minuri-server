@@ -48,25 +48,78 @@ uv run uvicorn app.main:app --reload
 
 Keep secrets in your local `.env` file and do not commit them to source control.
 
-## Suburb Data Source and Import
+## Data Sources and Import
 
-Suburb records are sourced from the `australianpostcodes` dataset by Matthew Proctor:
+This project currently uses three main external data sources: one for suburb master data, one for official population statistics, and one live API source for nearby places.
 
+### 1) Australian Postcodes (suburb master data)
+
+Source:
 - Repository: [https://github.com/matthewproctor/australianpostcodes](https://github.com/matthewproctor/australianpostcodes)
 - CSV used by the loader: [https://raw.githubusercontent.com/matthewproctor/australianpostcodes/master/australian_postcodes.csv](https://raw.githubusercontent.com/matthewproctor/australianpostcodes/master/australian_postcodes.csv)
 
-Load suburbs into your DB with:
+What it is:
+- A structured postcode/locality dataset for Australia.
 
+What it contains (used fields):
+- Locality name, postcode, state
+- Latitude/longitude
+- SA2 code and SA3 name metadata
+
+How we use it:
+- `app.scripts.load_melbourne_suburbs` fetches the CSV, filters to Victoria suburbs in Greater Melbourne (`sa4` 206-214), and writes records into the `suburbs` table.
+- `GET /suburb` and `GET /suburb/larger-region` read from this imported data.
+
+Load command:
 ```bash
 uv run python -m app.scripts.load_melbourne_suburbs
 ```
 
-The loader fetches the CSV from the upstream source, filters to VIC suburbs in Greater Melbourne (`sa4` 206-214), clears existing suburb rows, then inserts the refreshed set.
+### 2) ABS Regional Population (Victoria)
+
+Source:
+- ABS Regional Population release (Table 2): [https://www.abs.gov.au/statistics/people/population/regional-population/2024-25#data-downloads](https://www.abs.gov.au/statistics/people/population/regional-population/2024-25#data-downloads)
+
+What it is:
+- Official Australian Bureau of Statistics regional population dataset.
+
+What it contains (used fields):
+- SA2/SA3/SA4/GCCSA names and codes
+- ERP population values (2024 and 2025)
+- Growth and density measures (change %, area, density)
+
+How we use it:
+- `app.scripts.extract` converts the ABS Excel table into `app/data/victoria_population_table.csv`.
+- `app.scripts.load_population_records` loads the CSV into `suburb_demographics`.
+- `GET /api/population` aggregates `erp_2025` values by matching the requested location against SA2/SA3/SA4/GCCSA names.
+
+Load commands:
+```bash
+uv run python -m app.scripts.extract
+uv run python -m app.scripts.load_population_records
+```
+
+### 3) SerpApi (live nearby-interest search)
+
+Source:
+- SerpApi Google Local results API: [https://serpapi.com/](https://serpapi.com/)
+
+What it is:
+- A live third-party search API used at request time.
+
+What it contains:
+- Nearby place results from Google Local (for example, names, ratings, addresses, and related listing metadata).
+
+How we use it:
+- `app.services.near_me` calls SerpApi using `SERPAPI_API_KEY`.
+- `GET /api/nearby-interest` returns live results directly from SerpApi (this flow does not persist data in the project database).
 
 ## Data Flow
 
+The diagram below shows the main data sources for the app and how each source flows through loaders/services into the database and API endpoints.
+
 ```mermaid
-flowchart LR
+flowchart TD
     A1[Australian Postcodes CSV<br/>GitHub source] --> B1[load_melbourne_suburbs.py]
     A2[ABS Victoria Population XLSX] --> B2[extract.py]
     B2 --> A3[victoria_population_table.csv]
@@ -77,13 +130,28 @@ flowchart LR
 
     DB --> S1[suburb_service.py]
     DB --> S2[population_service.py]
+    A4[SerpApi<br/>Google Local Search] --> S3[near_me.py]
 
     S1 --> R1[suburb routes]
     S2 --> R2[api/population]
+    S3 --> R3[api/nearby-interest]
     R1 --> API[FastAPI app]
     R2 --> API
+    R3 --> API
 
     U[Client / Frontend] --> API
+
+    classDef source fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1;
+    classDef etl fill:#ede7f6,stroke:#5e35b1,color:#311b92;
+    classDef db fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20;
+    classDef serve fill:#fff3e0,stroke:#ef6c00,color:#e65100;
+    classDef client fill:#fce4ec,stroke:#c2185b,color:#880e4f;
+
+    class A1,A2,A3,A4 source;
+    class B1,B2,B3 etl;
+    class DB db;
+    class S1,S2,S3,R1,R2,R3,API serve;
+    class U client;
 ```
 
 ### ERD
