@@ -1,15 +1,9 @@
 # Minuri Server
 
-Minuri Server is the backend service for Minuri. It is built with FastAPI and currently powers APIs for location-based discovery and supporting data. The backend is expected to evolve over time, so this README is intentionally focused on local development and the current shape of the project.
-
-## Current Responsibilities
-
-- Expose HTTP APIs for nearby-interest search
-- Provide supporting population and suburb endpoints
-- Act as the backend foundation for future Minuri features
-
-## Tech Stack
-
+<div align="center">
+  <img src="./icon.png" width="300" alt="Minuri icon">
+</div>
+<br/>
 <p align="center">
 <a href=""><img src="https://img.shields.io/badge/Latest%20Version-V0.0.1-blue.svg?&style=for-the-badge&logo=git&logoColor=white&colorB=7289DA"></a> <br>
 <a href=""><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
@@ -19,6 +13,8 @@ Minuri Server is the backend service for Minuri. It is built with FastAPI and cu
 <a href=""><img src="https://img.shields.io/badge/SerpApi-2A6DF4?style=for-the-badge&logo=google&logoColor=white"></a>
 <a href=""><img src="https://img.shields.io/badge/pydantic-%23E92063.svg?style=for-the-badge&logo=pydantic&logoColor=white"></a>
 </p>
+
+Minuri Server is the backend service for Minuri. It is built with FastAPI and currently powers APIs for location-based discovery and supporting data. The backend is expected to evolve over time, so this README is intentionally focused on local development and the current shape of the project.
 
 ## Getting Started
 
