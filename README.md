@@ -63,6 +63,33 @@ uv run python -m app.scripts.load_melbourne_suburbs
 
 The loader fetches the CSV from the upstream source, filters to VIC suburbs in Greater Melbourne (`sa4` 206-214), clears existing suburb rows, then inserts the refreshed set.
 
+## Data Flow
+
+```mermaid
+flowchart LR
+    A1[Australian Postcodes CSV<br/>GitHub source] --> B1[load_melbourne_suburbs.py]
+    A2[ABS Victoria Population XLSX] --> B2[extract.py]
+    B2 --> A3[victoria_population_table.csv]
+    A3 --> B3[load_population_records.py]
+
+    B1 --> DB[(Postgres / Neon DB)]
+    B3 --> DB
+
+    DB --> S1[suburb_service.py]
+    DB --> S2[population_service.py]
+
+    S1 --> R1[/suburb routes]
+    S2 --> R2[/api/population]
+    R1 --> API[FastAPI app]
+    R2 --> API
+
+    U[Client / Frontend] --> API
+```
+
+### ERD
+
+![ERD](./ERD.svg)
+
 ## Project Structure
 
 - `app/main.py` - FastAPI application setup
