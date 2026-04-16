@@ -1,7 +1,7 @@
 # Minuri Server
 
 <div align="center">
-  <img src="./icon.png" width="300" alt="Minuri icon">
+  <img src="./favicon.png" width="300" alt="Minuri icon">
 </div>
 <br/>
 <p align="center">
