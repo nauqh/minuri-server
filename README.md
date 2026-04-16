@@ -132,14 +132,16 @@ flowchart TD
     DB --> S2[population_service.py]
     A4[SerpApi<br/>Google Local Search] --> S3[near_me.py]
 
-    S1 --> R1[suburb routes]
-    S2 --> R2[api/population]
-    S3 --> R3[api/nearby-interest]
-    R1 --> API[FastAPI app]
-    R2 --> API
-    R3 --> API
+    S1 --> API[FastAPI app]
+    S2 --> API
+    S3 --> API
 
-    U[Client / Frontend] --> API
+    API --> R1[suburb routes]
+    API --> R2[api/population]
+    API --> R3[api/nearby-interest]
+    R1 --> U[Client / Frontend]
+    R2 --> U
+    R3 --> U
 
     classDef source fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1;
     classDef etl fill:#ede7f6,stroke:#5e35b1,color:#311b92;
