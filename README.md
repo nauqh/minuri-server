@@ -78,8 +78,8 @@ flowchart LR
     DB --> S1[suburb_service.py]
     DB --> S2[population_service.py]
 
-    S1 --> R1[/suburb routes]
-    S2 --> R2[/api/population]
+    S1 --> R1[suburb routes]
+    S2 --> R2[api/population]
     R1 --> API[FastAPI app]
     R2 --> API
 
