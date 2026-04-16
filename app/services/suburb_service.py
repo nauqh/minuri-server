@@ -5,7 +5,6 @@ from ..models import Suburb
 
 def get_suburb_service(
     db: Session,
-    limit: int = 100,
     larger_region: str | None = None,
 ) -> dict:
     keywords = {}
@@ -13,7 +12,7 @@ def get_suburb_service(
         keywords["sa3_name"] = larger_region
 
     query = db.query(Suburb).filter_by(**keywords).order_by(Suburb.name)
-    rows = query.limit(limit).all()
+    rows = query.all()
     return {
         "suburbs": [
             {
