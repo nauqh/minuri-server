@@ -48,6 +48,21 @@ uv run uvicorn app.main:app --reload
 
 Keep secrets in your local `.env` file and do not commit them to source control.
 
+## Suburb Data Source and Import
+
+Suburb records are sourced from the `australianpostcodes` dataset by Matthew Proctor:
+
+- Repository: [https://github.com/matthewproctor/australianpostcodes](https://github.com/matthewproctor/australianpostcodes)
+- CSV used by the loader: [https://raw.githubusercontent.com/matthewproctor/australianpostcodes/master/australian_postcodes.csv](https://raw.githubusercontent.com/matthewproctor/australianpostcodes/master/australian_postcodes.csv)
+
+Load suburbs into your DB with:
+
+```bash
+uv run python -m app.scripts.load_melbourne_suburbs
+```
+
+The loader fetches the CSV from the upstream source, filters to VIC suburbs in Greater Melbourne (`sa4` 206-214), clears existing suburb rows, then inserts the refreshed set.
+
 ## Project Structure
 
 - `app/main.py` - FastAPI application setup
@@ -60,7 +75,7 @@ Keep secrets in your local `.env` file and do not commit them to source control.
 - `GET /`
 - `GET /api/nearby-interest`
 - `GET /api/population`
-- `GET /api/get-Suburb`
+- `GET /suburb`
 
 These routes reflect the current backend surface and may change as the project grows.
 
