@@ -1,6 +1,5 @@
 from fastapi import APIRouter, HTTPException, Query
 
-from ..config import get_settings
 from ..database import DbSession
 from ..schemas.near_me import NearbyInterestListResponse
 from ..services.near_me import NearMeServiceError, search_near_me
@@ -17,7 +16,6 @@ async def get_nearby_interest(
     suburb: str = Query(..., min_length=1),
     query: str = Query("cheap eats & groceries", min_length=1),
 ):
-    _ = get_settings()
     try:
         results = search_near_me(query=query, suburb=suburb)
         return {"suburb": suburb, "query": query, "results": results}
