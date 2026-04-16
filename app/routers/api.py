@@ -3,6 +3,8 @@ from typing import Literal
 from fastapi import APIRouter, HTTPException, Query
 
 from ..config import get_settings
+from ..database import DbSession
+from ..schemas.suburb import SuburbListResponse
 from ..services.near_me import NearMeServiceError, search_near_me
 from ..services.population_service import get_population_service
 from ..services.suburb_service import get_suburb_service
@@ -31,6 +33,6 @@ async def get_population(location: str, year: str = 2026):
     return get_population_service(location, year)
 
 
-@router.get("/get-Suburb")
-def get_suburb():
-    return get_suburb_service()
+@router.get("/get-Suburb", response_model=SuburbListResponse)
+def get_suburb(db: DbSession):
+    return get_suburb_service(db)

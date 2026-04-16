@@ -1,38 +1,20 @@
-def get_suburb_service():
-    """
-    Possible suburbs 2026:
-    Carlton
-    City of Melbourne
-    Docklands
-    East Melbourne
-    Kensington
-    Melbourne (CBD)
-    Melbourne (Remainder)
-    North Melbourne
-    Parkville
-    Port Melbourne
-    South Yarra
-    Southbank
-    West Melbourne (Industrial)
-    West Melbourne (Residential)
-    """
-    try:
-        suburbs = [
-            "Carlton",
-            "City of Melbourne",
-            "Docklands",
-            "East Melbourne",
-            "Kensington",
-            "Melbourne (CBD)",
-            "Melbourne (Remainder)",
-            "North Melbourne",
-            "Parkville",
-            "Port Melbourne",
-            "South Yarra",
-            "Southbank",
-            "West Melbourne (Industrial)",
-            "West Melbourne (Residential)",
+from sqlalchemy.orm import Session
+
+from ..models import Suburb
+
+
+def get_suburb_service(db: Session) -> dict:
+    rows = db.query(Suburb).order_by(Suburb.name).all()
+    return {
+        "suburbs": [
+            {
+                "locality": s.name,
+                "postcode": s.postcode,
+                "state": s.state,
+                "long": s.lng,
+                "lat": s.lat,
+                "larger_region": s.sa4_name,
+            }
+            for s in rows
         ]
-        return {"suburbs": suburbs}
-    except Exception as e:
-        return {"error": str(e)}
+    }

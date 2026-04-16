@@ -26,9 +26,9 @@ class Suburb(Base):
     name = Column(String(120), nullable=False, index=True)
     postcode = Column(String(10), nullable=False, index=True)
     state = Column(String(10), nullable=False, default="VIC")
-    lga_name = Column(String(120), nullable=True)
     lat = Column(Float, nullable=True)
     lng = Column(Float, nullable=True)
+    sa4_name = Column(String(120), nullable=True)
 
     demographics = relationship(
         "SuburbDemographics",
