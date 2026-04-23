@@ -126,49 +126,131 @@ How we use it:
 
 ## Data Flow
 
-The diagram below shows the main data sources for the app and how each source flows through loaders/services into the database and API endpoints.
+The diagram below shows the current import pipeline and runtime API flow.
 
 ```mermaid
 flowchart TD
-    A1[Australian Postcodes CSV<br/>GitHub source] --> B1[load_melbourne_suburbs.py]
-    A2[ABS Victoria Population XLSX] --> B2[extract.py]
-    B2 --> A3[victoria_population_table.csv]
-    A3 --> B3[load_population_records.py]
+    A1[Australian Postcodes CSV<br/>GitHub source] --> S3[load_melbourne_suburbs.py]
+    A2[ABS Victoria Population XLSX] --> S1[extract.py]
+    S1 --> F1[app/data/victoria_population_table.csv]
+    F1 --> S2[load_population_records.py]
+    S4[seed_static_reference_data.py] --> DB[(Postgres (Neon DB))]
+    S3 --> DB
+    S2 --> DB
 
-    B1 --> DB[(Postgres / Neon DB)]
-    B3 --> DB
+    RUN[python -m app.scripts] --> S1
+    RUN --> S2
+    RUN --> S3
+    RUN --> S4
 
-    DB --> S1[suburb_service.py]
-    DB --> S2[population_service.py]
-    A4[SerpApi<br/>Google Local Search] --> S3[near_me.py]
+    DB --> SV1[suburb_service.py]
+    DB --> SV2[population_service.py]
+    A3[SerpApi<br/>Google Local Search] --> SV3[near_me.py]
+    SV1 --> API[FastAPI app]
+    SV2 --> API
+    SV3 --> API
 
-    S1 --> API[FastAPI app]
-    S2 --> API
-    S3 --> API
-
-    API --> R1[suburb routes]
-    API --> R2[api/population]
-    API --> R3[api/nearby-interest]
+    API --> R1[GET /suburb]
+    API --> R2[GET /suburb/larger-region]
+    API --> R3[GET /api/population]
+    API --> R4[GET /api/nearby-interest]
     R1 --> U[Client / Frontend]
     R2 --> U
     R3 --> U
+    R4 --> U
 
     classDef source fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1;
     classDef etl fill:#ede7f6,stroke:#5e35b1,color:#311b92;
     classDef db fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20;
     classDef serve fill:#fff3e0,stroke:#ef6c00,color:#e65100;
     classDef client fill:#fce4ec,stroke:#c2185b,color:#880e4f;
+    classDef runner fill:#f3e5f5,stroke:#8e24aa,color:#4a148c;
 
-    class A1,A2,A3,A4 source;
-    class B1,B2,B3 etl;
+    class A1,A2,A3,F1 source;
+    class S1,S2,S3,S4 etl;
     class DB db;
-    class S1,S2,S3,R1,R2,R3,API serve;
+    class SV1,SV2,SV3,R1,R2,R3,R4,API serve;
     class U client;
+    class RUN runner;
 ```
 
 ### ERD
 
-![ERD](./ERD.svg)
+```mermaid
+erDiagram
+    TOPIC ||--o{ GUIDE : classifies
+    ARC ||--o{ GUIDE : groups
+    GUIDE ||--o{ GUIDE_SECTION : contains
+    GUIDE ||--o| GUIDE : next_guide
+    SUBURB_DEMOGRAPHIC ||--o{ SUBURB : maps_sa2
+
+    TOPIC {
+      int id PK
+      string slug UK
+      string name
+      int sort_order
+      boolean is_active
+    }
+
+    ARC {
+      int id PK
+      string slug UK
+      string name
+      int sort_order
+      string timeframe_label
+    }
+
+    GUIDE {
+      int id PK
+      string title
+      string slug UK
+      int arc_id FK
+      int arc_order
+      int topic_id FK
+      int next_guide_id FK
+      string near_me_deeplink
+      int reading_time_min
+      boolean is_published
+      boolean is_featured
+      datetime created_at
+      datetime updated_at
+    }
+
+    GUIDE_SECTION {
+      int id PK
+      int guide_id FK
+      string section_key
+      int section_order
+      text body
+      datetime updated_at
+    }
+
+    SUBURB {
+      int id PK
+      string name
+      string postcode
+      string state
+      float lat
+      float lng
+      string sa2_code FK
+      string sa3_name
+    }
+
+    SUBURB_DEMOGRAPHIC {
+      int id PK
+      string sa2_code UK
+      string sa2_name
+      string sa3_name
+      string sa4_name
+      string gccsa_name
+      int erp_2024
+      int erp_2025
+      int erp_change_no
+      float erp_change_pct
+      float area_km2
+      float pop_density_2025
+    }
+```
 
 ## Project Structure
 

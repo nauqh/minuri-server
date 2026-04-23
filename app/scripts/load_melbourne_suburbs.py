@@ -37,16 +37,27 @@ def _title_locality(raw: str) -> str:
 
 def load_rows(reader: csv.DictReader) -> list[dict]:
     payload: list[dict] = []
+    seen_keys: set[tuple[str, str, str]] = set()
     for row in reader:
         if row.get("state") != "VIC":
             continue
         sa4 = (row.get("sa4") or "").strip()
         if sa4 not in MELBOURNE_SA4_CODES:
             continue
+        locality = _title_locality(row.get("locality") or "")
+        postcode = (row.get("postcode") or "").strip()
+        if not locality or not postcode:
+            continue
+
+        natural_key = (locality, postcode, "VIC")
+        if natural_key in seen_keys:
+            continue
+        seen_keys.add(natural_key)
+
         payload.append(
             {
-                "name": _title_locality(row.get("locality") or ""),
-                "postcode": (row.get("postcode") or "").strip(),
+                "name": locality,
+                "postcode": postcode,
                 "state": "VIC",
                 "lat": _float_cell(row.get("Lat_precise")) or _float_cell(row.get("lat")),
                 "lng": _float_cell(row.get("Long_precise")) or _float_cell(row.get("long")),
@@ -68,6 +79,8 @@ def main() -> None:
     # Split the CSV file into lines
     lines = response.text.splitlines()
     payload = load_rows(csv.DictReader(lines))
+    if not payload:
+        raise RuntimeError("No suburb rows parsed from source CSV.")
     session = SessionLocal()
     try:
         # Clear existing suburbs
@@ -82,7 +95,13 @@ def main() -> None:
     finally:
         session.close()
 
-    print(f"Inserted {len(payload)} suburbs.")
+    with_geo = sum(
+        1 for row in payload if row["lat"] is not None and row["lng"] is not None)
+    with_sa2 = sum(1 for row in payload if row["sa2_code"] is not None)
+    print(
+        f"Inserted {len(payload)} suburbs "
+        f"({with_geo} with coordinates, {with_sa2} with SA2 code)."
+    )
 
 
 if __name__ == "__main__":
