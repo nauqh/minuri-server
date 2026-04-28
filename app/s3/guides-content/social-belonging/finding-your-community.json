@@ -1,0 +1,54 @@
+{
+  "id": 13,
+  "slug": "finding-your-community",
+  "title": "Finding Your Community",
+  "summary": "Build durable belonging by joining structures, not just events.",
+  "arc": "month-1",
+  "arcOrder": 4,
+  "topic": "social-belonging",
+  "readingTimeMin": 5,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/social-belonging/finding-your-community.json",
+  "nextGuideSlug": "homesickness-nobody-warns-you-about",
+  "searchTerms": [
+    "community centres",
+    "volunteering",
+    "clubs"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-finding-your-community/640/420",
+  "nearMeDeeplink": "/near-me?topic=social-belonging&from=finding-your-community",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "You want more than occasional plans; you want a stable social net."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Friendships help, but you still lack a wider sense of place."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Belonging grows faster in recurring groups with shared roles."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Choose one high-frequency group and commit to showing up at least three times.\n\nPrefer environments with contribution opportunities over passive attendance."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find community centres and volunteer groups near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: When to See a Psych vs a Counsellor vs a Friend - support matching matters."
+    }
+  ]
+}

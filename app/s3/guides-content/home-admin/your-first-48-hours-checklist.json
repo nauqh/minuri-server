@@ -1,0 +1,56 @@
+{
+  "id": 18,
+  "slug": "your-first-48-hours-checklist",
+  "title": "Your First 48 Hours: The Checklist",
+  "summary": "What to photograph, meter, and fix before you unpack so your rental protects you later.",
+  "arc": "day-1",
+  "arcOrder": 5,
+  "topic": "home-admin",
+  "readingTimeMin": 5,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/home-admin/your-first-48-hours-checklist.json",
+  "nextGuideSlug": "when-you-dont-know-anyone-yet",
+  "searchTerms": [
+    "condition report",
+    "rental",
+    "bond",
+    "utilities",
+    "moving in"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-first-48-hours/640/420",
+  "nearMeDeeplink": "/near-me?topic=home-admin&from=your-first-48-hours-checklist",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "Moving-in afternoon. The landlord has just left. You are standing in a flat full of boxes with no clear order for what to check first."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Relief from the keys hits at the same time as formless overwhelm. Nobody handed you a manual for the first two days."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Your first 48 hours as a renter are the easiest time to document problems. What you record now is evidence if something is disputed later."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Walk the condition report with photos and notes. Record meter readings. Test smoke alarms and list defects. Know the return deadline for the report. Change Wi-Fi credentials if included. Keep one folder of photos on your phone."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you are ready, find locksmiths, hardware and support services near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: When You Don't Know Anyone Yet — for when the quiet feels louder than the boxes."
+    }
+  ]
+}

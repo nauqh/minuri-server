@@ -1,0 +1,54 @@
+{
+  "id": 5,
+  "slug": "crisis-lines-you-can-actually-call",
+  "title": "Crisis Lines You Can Actually Call",
+  "summary": "You do not need to be in worst-case crisis to call a crisis line. Save the numbers before you need them.",
+  "arc": "day-1",
+  "arcOrder": 4,
+  "topic": "health-wellbeing",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/health-wellbeing/crisis-lines-you-can-actually-call.json",
+  "nextGuideSlug": "your-first-48-hours-checklist",
+  "searchTerms": [
+    "lifeline",
+    "mental health",
+    "support lines"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-crisis-lines-you-can-actually-call/640/420",
+  "nearMeDeeplink": "/near-me?topic=health-wellbeing&from=crisis-lines-you-can-actually-call",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "It's 2am. Something has happened — a fight with someone back home, a wave of everything feeling too heavy at once, or a creeping flatness you can't name. You open a browser tab. You type \"who to call when you're not okay\" into the search bar. You stare at it. You close the tab."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "There is a specific, quiet shame in googling that phrase. Like you should already know this. Like everybody else got the number ages ago.\n\nYou didn't. They didn't either. Most people in this country only learn these numbers when they need them, and not a moment before."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "What nobody told you",
+      "value": "You don't have to be in crisis to call a crisis line.\n\nThat's the thing nobody says clearly. The word *crisis* sounds enormous, and most of us don't feel enormous — we feel tired, or knotted up, or stuck on a thought we can't shake. The lines below are for that, too. The trained crisis supporter on the other end isn't there to assess whether your distress qualifies. They're there to talk to whoever picks up the phone.\n\nYou're allowed to call. That's the whole rule."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How it actually works",
+      "value": "You don't need to memorise all of these. Save two — one general, one that fits your situation — into your phone now, before you need them.\n\n**Lifeline · 13 11 14**\n\n24/7. Crisis support and suicide prevention. The most-called line in the country. You can also text **0477 13 11 14** or chat online at lifeline.org.au if a phone call feels like too much. Trained crisis supporters answer.\n\n**Beyond Blue · 1300 22 4636**\n\n24/7. Brief, confidential counselling for anxiety, depression, and general mental health support. Online chat at beyondblue.org.au. Especially good if you want to talk something through before deciding whether to see a GP.\n\n**Suicide Call Back Service · 1300 659 467**\n\n24/7 free counselling and support for people experiencing suicidal thoughts, people who've attempted, and people bereaved by suicide. Phone, online chat, and video calls.\n\n**Kids Helpline · 1800 55 1800**\n\nFor anyone aged 5 to 25. Phone and online chat, 24/7. Despite the name, it's a real counselling service for young adults too — university students still qualify.\n\n**13YARN · 13 92 76**\n\n24/7 confidential crisis support for Aboriginal and Torres Strait Islander people, run by Aboriginal and Torres Strait Islander crisis supporters. Culturally safe.\n\n**1800RESPECT · 1800 737 732**\n\n24/7 confidential support for people affected by sexual assault, domestic, or family violence. Phone, text, and online chat.\n\n**QLife · 1800 184 527**\n\nLGBTQIA+ peer support and referral. 3pm to midnight every day. Anonymous.\n\n**MensLine Australia · 1300 78 99 78**\n\n24/7 support for men around relationships, mental health, and emotional concerns. Phone, online chat, and video.\n\n**000**\n\nFor physical emergencies, including when you or someone else is in immediate danger. The other lines above are not silent on this — they will help you call 000 if it's needed and you're not sure.\n\n### What happens when you call\n\nA real person picks up. There is no test. There is no script you have to match. They will ask how you're feeling and what's been happening, and they will listen. If you don't know what to say, you can say *I don't know what to say.* That's a fine place to start.\n\nThe call is free. It doesn't appear on your phone bill in any way that identifies it. It is confidential. You don't have to give your name unless you want to.\n\nIf you're not sure your situation qualifies, that uncertainty is itself a reason to call. Trained supporters would much rather hear from someone who turned out to be okay than not hear from someone who wasn't.\n\n### The bit nobody mentions\n\nSave **13 11 14** into your phone now, while you're reading this. Name the contact \"Lifeline.\" Don't think about it again until the night you need it. Future-you will know it's there."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "When you're ready",
+      "value": "→ Find mental health services and crisis support near you (opens Near Me → Health & Wellbeing → Mental health services)"
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Up next",
+      "value": "When you're past the immediate moment and want to think about ongoing support, the next guide that fits is When to See a Psych, a Counsellor, or a Friend (Arc 3) — but if you're still in early days, that one can wait."
+    }
+  ]
+}

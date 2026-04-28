@@ -1,0 +1,54 @@
+{
+  "id": 10,
+  "slug": "cooking-5-meals-youll-actually-eat",
+  "title": "Cooking 5 Meals You'll Actually Eat",
+  "summary": "Use a repeatable meal system instead of collecting random recipes.",
+  "arc": "week-1",
+  "arcOrder": 1,
+  "topic": "food-eating",
+  "readingTimeMin": 3,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/food-eating/cooking-5-meals-youll-actually-eat.json",
+  "nextGuideSlug": "setting-up-utilities-without-overpaying",
+  "searchTerms": [
+    "meal prep",
+    "cooking for one",
+    "shopping list"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-cooking-5-meals-youll-actually-eat/640/420",
+  "nearMeDeeplink": "/near-me?topic=food-eating&from=cooking-5-meals-youll-actually-eat",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "Your fridge keeps filling with ingredients you never finish."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "You are exhausted by deciding what to cook every evening."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "You need a system of five repeat meals, not endless variety."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Pick five recipes with overlapping ingredients and one prep day.\n\nOptimize for low-effort execution on tired weekdays, not ideal weekends."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find supermarkets and food markets near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Making Friends in a City Where Everyone's Busy - routine creates room for people."
+    }
+  ]
+}

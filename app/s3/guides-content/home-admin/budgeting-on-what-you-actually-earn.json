@@ -1,0 +1,55 @@
+{
+  "id": 8,
+  "slug": "budgeting-on-what-you-actually-earn",
+  "title": "Budgeting on What You Actually Earn",
+  "summary": "Build a realistic weekly money system for Melbourne costs.",
+  "arc": "week-1",
+  "arcOrder": 3,
+  "topic": "home-admin",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/home-admin/budgeting-on-what-you-actually-earn.json",
+  "nextGuideSlug": "medicare-bulk-billing-and-mental-health-care-plans",
+  "searchTerms": [
+    "budget",
+    "weekly spending",
+    "rent",
+    "cost of living"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-budgeting-on-what-you-actually-earn/640/420",
+  "nearMeDeeplink": "/near-me?topic=home-admin&from=budgeting-on-what-you-actually-earn",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "End of month one and your spending does not match your memory."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "You feel careful, but your system still leaks."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "A weekly rhythm beats a monthly guess for early independence."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Split costs into fixed essentials and weekly flex spending, then review on the same day every week.\n\nKeep one protected buffer category so every surprise does not become debt."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find banks and support services near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Setting Up Utilities Without Overpaying - your biggest fixed-cost tune-up."
+    }
+  ]
+}

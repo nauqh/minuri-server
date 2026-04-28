@@ -1,0 +1,54 @@
+{
+  "id": 12,
+  "slug": "homesickness-nobody-warns-you-about",
+  "title": "The Homesickness Nobody Warns You About",
+  "summary": "Understand the delayed homesickness phase and respond with structure.",
+  "arc": "month-1",
+  "arcOrder": 5,
+  "topic": "social-belonging",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/social-belonging/homesickness-nobody-warns-you-about.json",
+  "nextGuideSlug": "when-to-see-a-psych-counsellor-or-friend",
+  "searchTerms": [
+    "homesickness",
+    "loneliness",
+    "relocation"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-homesickness-nobody-warns-you-about/640/420",
+  "nearMeDeeplink": "/near-me?topic=social-belonging&from=homesickness-nobody-warns-you-about",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "A warm call with home ends and your room feels suddenly unfamiliar again."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "You are functioning, but there is an ache that keeps returning."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Homesickness often peaks after novelty fades, not when you first arrive."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Use scheduled contact, local rituals, and one ongoing community thread.\n\nAvoid living only in digital memory loops of home."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find community and cultural groups near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Finding Your Community - turning connection into belonging infrastructure."
+    }
+  ]
+}

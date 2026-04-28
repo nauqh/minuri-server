@@ -1,0 +1,56 @@
+{
+  "id": 20,
+  "slug": "finding-your-way-around-melbourne-in-week-one",
+  "title": "Finding Your Way Around Melbourne in Week One",
+  "summary": "Grid, spine streets, and trams as a compass so the inner suburbs start to feel legible.",
+  "arc": "week-1",
+  "arcOrder": 6,
+  "topic": "getting-around",
+  "readingTimeMin": 5,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/getting-around/finding-your-way-around-melbourne-in-week-one.json",
+  "nextGuideSlug": "making-friends-in-a-city-where-everyones-busy",
+  "searchTerms": [
+    "navigation",
+    "CBD grid",
+    "maps",
+    "walking",
+    "tram"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-week-one-navigation/640/420",
+  "nearMeDeeplink": "/near-me?topic=getting-around&from=finding-your-way-around-melbourne-in-week-one",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "Day four. A fifteen-minute walk turns into thirty because a one-way street and a tram line pointed the wrong way."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "The city is not hostile — it is just written in a dialect you have not learned yet."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "The CBD is a tight grid; just outside, streets curve. Learn four spine streets and the tram lines that follow them, and most inner suburbs click into place."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Use Swanston, Elizabeth, Flinders and Collins as anchors. Toggle walking vs transit in maps deliberately. Treat trams as north-south or east-west backbones. Repeat the same commute twice — familiarity beats novelty this week."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you are ready, find stops, bike share and paths near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Making Friends in a City Where Everyone's Busy — turning place into people."
+    }
+  ]
+}

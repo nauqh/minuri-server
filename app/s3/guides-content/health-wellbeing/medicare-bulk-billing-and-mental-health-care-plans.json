@@ -1,0 +1,59 @@
+{
+  "id": 7,
+  "slug": "medicare-bulk-billing-and-mental-health-care-plans",
+  "title": "Medicare, Bulk-Billing & Mental Health Care Plans",
+  "summary": "Learn the three healthcare terms that unlock affordable support: Medicare, bulk-billing, and Mental Health Care Plans.",
+  "arc": "week-1",
+  "arcOrder": 4,
+  "topic": "health-wellbeing",
+  "readingTimeMin": 8,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/health-wellbeing/medicare-bulk-billing-and-mental-health-care-plans.json",
+  "nextGuideSlug": "managing-your-prescriptions-in-a-new-city",
+  "searchTerms": [
+    "medicare",
+    "bulk billing",
+    "mhcp"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Healthdirect",
+      "href": "https://www.healthdirect.gov.au"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-medicare-bulk-billing-and-mental-health-care-plans/640/420",
+  "nearMeDeeplink": "/near-me?topic=health-wellbeing&from=medicare-bulk-billing-and-mental-health-care-plans",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "You're at the GP for the first time. You've made it through the door, you've filled in the form, you've been called into the room. The doctor asks for your Medicare number, and your face does the thing it does when you don't know an answer.\n\nYou've been meaning to enrol. You've had it on your list since you arrived. *Eventually* was a comfortable word, until eventually became right now, in a doctor's office, with someone watching you fail to produce something most Australians have had since they were born."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Medicare feels like bureaucracy — something you'll get to when you have a free afternoon. Then it isn't, and the gap between *I'll do that soon* and *I should have done it already* turns out to be smaller than you thought."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "What nobody told you",
+      "value": "Enrolling in Medicare takes twenty minutes online. Once it's done, a bulk-billing GP costs you nothing — and a Mental Health Care Plan unlocks ten subsidised psychology sessions a year that most newcomers never claim because they don't know about them.\n\nThe Australian healthcare system is unusually good at hiding its best features behind bureaucratic names. If you only learn three terms in your first year — *bulk-billing*, *Medicare*, *Mental Health Care Plan* — you're already ahead of most people you'll meet."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How it actually works",
+      "value": "**Step 1: Enrol in Medicare.**\n\nIf you're an Australian citizen or permanent resident, go to **servicesaustralia.gov.au** and search \"Enrol in Medicare.\" You'll need your passport or birth certificate, proof of address, and a few minutes. Most people get a card in 7 to 14 days, but you can get a temporary number immediately by calling Services Australia or visiting a service centre.\n\nIf you're an international student, your eligibility depends on your country. Australia has reciprocal Medicare agreements with eleven countries — including the UK, Italy, Sweden, Norway, the Netherlands, Belgium, Finland, Slovenia, Malta, the Republic of Ireland, and New Zealand. If you're from one of those, you can enrol. Check the Services Australia site for the current list and the documents you'll need.\n\nIf you're not eligible for Medicare, you'll have Overseas Student Health Cover (OSHC) instead — different system, similar idea, separate guide.\n\n**Step 2: Understand bulk-billing.**\n\nA bulk-billing clinic is a clinic that accepts the Medicare rebate as full payment for a service. You pay nothing out of pocket — the clinic claims directly from Medicare for you.\n\nNot every clinic bulk-bills, and many that do only bulk-bill specific groups (students, concession card holders, children, healthcare card holders) or specific services (standard consults but not procedures). When you call to book, ask: *Do you bulk-bill new patients?* The answer will be yes, no, or \"for some appointment types.\" All three are useful information.\n\nTo find clinics that bulk-bill in your suburb, search Healthdirect or use the *Find a bulk-billing GP near you* link in our Arc 1 GP guide.\n\n**Step 3: Ask about a Mental Health Care Plan.**\n\nA Mental Health Care Plan (officially called a Mental Health Treatment Plan, sometimes shortened to MHTP or MHCP) is the document that unlocks Medicare-rebated psychology sessions. It is written by your GP after a longer-than-usual consultation focused on your mental health.\n\nOnce you have one, you can claim a Medicare rebate for **up to 10 individual sessions** with a registered psychologist, social worker, or occupational therapist per calendar year, and a separate 10 group sessions if those are relevant.\n\nWhat you get back from Medicare in 2026:\n- **Clinical psychologist** — about $145 per session\n- **Registered psychologist** (general) — about $99 per session\n- **Accredited social worker or occupational therapist** — about $87 per session\n\nWhat it actually costs you depends on the psychologist's fee. Most charge between $180 and $300 per session, so your gap (out-of-pocket) is usually between $40 and $160. Some psychologists bulk-bill — meaning the rebate is the full payment and you pay nothing — but they're rarer than they used to be, and waiting lists are often longer.\n\n**Step 4: How to ask for one.**\n\nWhen you book the appointment, ask for a **longer consultation** and tell reception you'd like to discuss a Mental Health Care Plan. The longer slot matters — a standard 15-minute consult won't fit it.\n\nIn the appointment, your GP will go through a structured conversation about how you've been feeling, what's been going on, and what you're hoping for. They'll write the plan, give you a referral letter, and you take that to a psychologist of your choice (or one they recommend).\n\nA change worth knowing about: **since 1 November 2025**, the referral structure works in two stages. Your GP refers you for an \"initial course of treatment\" of up to six sessions. After those, you go back to the GP for a quick review, and they refer you for a \"subsequent course\" of up to six more — bringing you to the annual maximum of ten.\n\nThis sounds bureaucratic and it is, but the practical effect is that you'll see your GP at least twice in a year of therapy: once to start, once to renew the referral around session six.\n\n### The bit nobody mentions\n\nThe Mental Health Care Plan does not expire. If your GP writes one for you in March and you don't see a psychologist until November, the plan still works.\n\nYou also don't need to feel \"bad enough\" to ask for one. The plan exists for people with diagnosed mental health conditions including anxiety and depression — but those diagnoses include the kinds of low-grade, persistent struggle that most people in their first year of independent living are managing quietly. If a GP listens to your situation and thinks a plan would help, they'll write one.\n\nThe conversation that gets you there is shorter than you think. Most people are nervous walking in and surprised at how routine the GP makes it."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "When you're ready",
+      "value": "→ Find bulk-billing GPs and mental health services near you (opens Near Me → Health & Wellbeing)"
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Up next",
+      "value": "Managing Your Prescriptions in a New City — for the medication side of all this."
+    }
+  ]
+}

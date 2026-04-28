@@ -134,7 +134,7 @@ flowchart TD
     A2[ABS Victoria Population XLSX] --> S1[extract.py]
     S1 --> F1[app/data/victoria_population_table.csv]
     F1 --> S2[load_population_records.py]
-    S4[seed_static_reference_data.py] --> DB[(Postgres (Neon DB))]
+    S4[seed_static_reference_data.py] --> DB[(Postgres - Neon DB)]
     S3 --> DB
     S2 --> DB
 

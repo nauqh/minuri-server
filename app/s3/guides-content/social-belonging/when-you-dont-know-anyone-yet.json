@@ -1,0 +1,56 @@
+{
+  "id": 19,
+  "slug": "when-you-dont-know-anyone-yet",
+  "title": "When You Don't Know Anyone Yet",
+  "summary": "Social baseline loneliness after a move is common — small routines that help on day one.",
+  "arc": "day-1",
+  "arcOrder": 6,
+  "topic": "social-belonging",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/social-belonging/when-you-dont-know-anyone-yet.json",
+  "nextGuideSlug": null,
+  "searchTerms": [
+    "loneliness",
+    "homesick",
+    "new city",
+    "social",
+    "first day"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-dont-know-anyone/640/420",
+  "nearMeDeeplink": "/near-me?topic=social-belonging&from=when-you-dont-know-anyone-yet",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "Evening of day one. The group chat is quiet. You realise you have not spoken out loud to anyone since the Uber driver."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Not crisis — more like a room without furniture. You are between old ties and new ones, and the gap feels personal."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Relocation loneliness is extremely common. It does not mean you chose wrong. It means you are building a social world from zero."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Aim for one small real-world interaction tomorrow. Message one person you trust with a specific time to call. Take a ten-minute walk outside. Avoid comparing your day one to other people's highlight posts."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you are ready, find parks, community spaces and low-key venues near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Tomorrow, open Week 1 — cooking, utilities, and the rest of settling in."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": 2,
+  "slug": "cheap-eats-when-broke",
+  "title": "Cheap Eats When You're Broke",
+  "summary": "Keep food quality up even when cash flow is tight.",
+  "arc": "month-1",
+  "arcOrder": 1,
+  "topic": "food-eating",
+  "readingTimeMin": 3,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/food-eating/cheap-eats-when-broke.json",
+  "nextGuideSlug": "renting-without-getting-burned",
+  "searchTerms": [
+    "cheap eats",
+    "budget meals",
+    "food court",
+    "banh mi"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-cheap-eats-when-broke/640/420",
+  "nearMeDeeplink": "/near-me?topic=food-eating&from=cheap-eats-when-broke",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "Week two. You have $30 left and still need meals until payday."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Money stress follows every menu decision and makes every option feel wrong."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Melbourne has a deep low-cost food ecosystem if you know where to look."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Build a fallback list: 3 cheap lunch spots, 2 dinner options, and 1 emergency late-night stop.\n\nTie your list to routes you already travel so choices are easy when tired."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find budget-friendly cafes and restaurants near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Getting a Myki & Surviving PTV - so transport does not eat your budget."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": 14,
+  "slug": "when-to-see-a-psych-counsellor-or-friend",
+  "title": "When to See a Psych, a Counsellor, or a Friend",
+  "summary": "Most people are not blocked by willingness to get help, but by confusion about which help comes first.",
+  "arc": "month-1",
+  "arcOrder": 6,
+  "topic": "health-wellbeing",
+  "readingTimeMin": 9,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/health-wellbeing/when-to-see-a-psych-counsellor-or-friend.json",
+  "nextGuideSlug": "sustaining-yourself-sleep-movement-and-disconnecting",
+  "searchTerms": [
+    "psychologist",
+    "counsellor",
+    "mental health plan",
+    "gp"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Healthdirect",
+      "href": "https://www.healthdirect.gov.au"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-when-to-see-a-psych-counsellor-or-friend/640/420",
+  "nearMeDeeplink": "/near-me?topic=health-wellbeing&from=when-to-see-a-psych-counsellor-or-friend",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "You've been feeling low for six weeks. Not in crisis — you're going to work, you're seeing people sometimes, you're functioning — but there's a flatness that has become harder to explain away as *just a rough patch*. Or maybe the opposite: you've been referred to a psychologist by a GP and you don't know what to expect, what to say, or whether it's the right kind of help in the first place."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "The mental health help landscape is confusing in a way that actively stops people accessing it. Everyone says *get help* but nobody clearly explains what kind, from whom, at what cost, in what order. So you do nothing, or you do something that doesn't fit, and you decide help doesn't work.\n\nThat's not what's happening. It's just that the system has four different doors, and they look identical from the street."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "What nobody told you",
+      "value": "Your GP is your first stop for mental health — not a psychologist, not a psychiatrist. They can assess you, prescribe medication if needed, and write the Mental Health Care Plan that unlocks subsidised psychology sessions.\n\nThis is the order. Skip it and you usually end up backtracking."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "The four options, clearly",
+      "value": "**1. Your GP**\n\nThe entry point. Always.\n\nA GP is a generalist medical doctor who can:\n- Have an initial conversation about how you're feeling\n- Assess whether what you're experiencing has a clinical name\n- Prescribe medication (antidepressants, anti-anxiety, sleep) if appropriate\n- Write a Mental Health Care Plan that subsidises psychology sessions\n- Refer you onward to a psychologist or, if needed, a psychiatrist\n\nYou see your GP first, and almost always more than once. The MHCP review system means you'll likely see them at least twice a year if you're in therapy.\n\nCost with bulk-billing: $0. Without: $40-90 gap on a Medicare rebate.\n\n**2. A psychologist**\n\nTalk therapy. Evidence-based approaches like CBT (cognitive behavioural therapy), ACT (acceptance and commitment therapy), or schema therapy. They cannot prescribe medication.\n\nThere are two tiers:\n- **Clinical psychologists** have additional postgraduate training in clinical practice and command higher Medicare rebates.\n- **Registered psychologists** (sometimes called \"general\" psychologists) are also fully qualified — six years of training plus registration — and the difference in clinical outcome is much smaller than the rebate gap suggests.\n\nSessions are typically 50 minutes. Most people see a psychologist weekly or fortnightly for a defined number of sessions, then taper.\n\nCost in 2026 with an MHCP: typically a $40–$160 gap per session after the Medicare rebate, depending on the psychologist's fees. Some bulk-bill (rebate is the full payment, no gap) but waiting lists are usually longer.\n\nTen subsidised sessions per calendar year through Medicare.\n\n**3. A psychiatrist**\n\nA medical specialist — a doctor with additional training in psychiatry. They can prescribe medication, including medications GPs cannot, and they handle complex or treatment-resistant conditions.\n\nYou need a referral from a GP to see a psychiatrist. Wait times can be long — three to six months is common for non-urgent cases — and consultations are expensive even with Medicare rebates.\n\nMost people don't need a psychiatrist. Most people who do, end up there because their GP or psychologist suggested it after a clear-headed conversation about what wasn't working.\n\n**4. A counsellor**\n\nCounsellors offer talk therapy too, but they are not registered psychologists. Their training varies, and Medicare rebates do not apply to most counsellors.\n\nThat said, counselling can be excellent and accessible. University counselling services (free for students), workplace Employee Assistance Programs (free for employees), and community counselling services often use counsellors and offer real, useful support.\n\nIf money is the primary barrier and you're a student or have an EAP through work, this can be the fastest, most accessible help available — and a perfectly reasonable place to start.\n\n### How to choose\n\nUse this rough order of triage:\n\n| What's happening | Where to start |\n|---|---|\n| You're not in crisis but something feels off, and it's been weeks | GP, then potentially psychologist |\n| You're in immediate distress | A crisis line (see Arc 1 guide) |\n| You think you need medication | GP first |\n| You want to talk to someone affordable, soon | University counselling, EAP, or community counselling service |\n| GP and psychologist haven't been enough | Ask GP about psychiatrist referral |\n\n### How to know if a therapist is working\n\nThree to six sessions in is when most people start to know whether the fit is right. The signs it's working aren't usually dramatic — they're closer to: *I'm thinking about that thing differently than I used to*, or *I noticed I caught myself before falling into the spiral I always fall into*.\n\nIf after six sessions nothing has shifted and you don't feel like the person on the other side of the room understands the situation, you can change therapists. You don't need to feel guilty about this. Therapeutic fit is a real factor in outcome — sometimes the relationship just doesn't click, and trying someone else is the right move, not a failure.\n\n### The bit nobody mentions\n\nYou don't need a major reason to start. *I've been low for a while, and I don't know what to do about it* is a complete sentence and an entirely reasonable place to begin a GP conversation.\n\nThe system is set up to handle people who arrive uncertain. The GP's job is to translate \"something is off\" into the next correct step, even if you can't."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "When you're ready",
+      "value": "→ Find mental health services near you (opens Near Me → Health & Wellbeing → Mental health services)"
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Up next",
+      "value": "Sustaining Yourself: Sleep, Movement and Disconnecting — when things are okay but you want to keep them that way."
+    }
+  ]
+}

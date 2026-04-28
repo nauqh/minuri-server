@@ -1,0 +1,57 @@
+{
+  "id": 17,
+  "slug": "sustaining-yourself-sleep-movement-and-disconnecting",
+  "title": "Sustaining Yourself: Sleep, Movement and Disconnecting",
+  "summary": "High-leverage maintenance habits are usually simple, quiet, and cheaper than wellness culture suggests.",
+  "arc": "month-1",
+  "arcOrder": 7,
+  "topic": "health-wellbeing",
+  "readingTimeMin": 7,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/health-wellbeing/sustaining-yourself-sleep-movement-and-disconnecting.json",
+  "nextGuideSlug": null,
+  "searchTerms": [
+    "sleep",
+    "movement",
+    "wellbeing",
+    "exercise",
+    "digital detox",
+    "maintenance"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-sustaining-yourself-sleep-movement-and-disconnecting/640/420",
+  "nearMeDeeplink": "/near-me?topic=health-wellbeing&from=sustaining-yourself-sleep-movement-and-disconnecting",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "It's a Wednesday in month four. You're not in crisis. You're not overwhelmed. You're just running slightly below what you know is your best — tired but not exhausted, stressed but not anxious, fine but not quite right. The subtle grind of city life has begun to leave a mark you can feel without naming."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "The maintenance phase is less dramatic than the survival phase, and that's why it gets neglected. There's no acute moment to react to — just an accumulating fatigue from always being slightly alert, always figuring something out, always being on.\n\nWellness culture has turned this into a marketplace. The truth is simpler and quieter: a few specific things matter a lot, and almost everything else is noise."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "What nobody told you",
+      "value": "**Sleep debt is the most underrated factor in how you feel in your first year.** Not because it makes you tired — that part you know — but because chronically inconsistent sleep timing is what most quietly unsettles your mood, your appetite, your motivation, and your capacity to enjoy things. The research is clear and unsexy: *consistency of sleep timing matters more than total hours slept.*\n\nThis is one of the highest-leverage things you can do for yourself, and it costs nothing."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How it actually works",
+      "value": "**Sleep, the consistency rule.**\n\nThe single most powerful change you can make to your sleep is to wake up at the same time every day, including weekends. Not bedtime — wake time. Bedtime sorts itself out once your wake time is fixed, because your body builds up sleep pressure during the day and releases it at night, and that whole system runs on the rhythm of when you get up.\n\nAim for a wake time that lets you get 7-9 hours most nights. Hold it within an hour even on weekends. Within two to three weeks you'll feel the difference.\n\n**Melbourne summer light is a problem.**\n\nIf you arrived during summer, you'll discover something specific about Melbourne: the light is up at 5:30am and down at 8:30pm, and your body's sleep cues are aggressively confused by this. Blackout curtains in the bedroom are not a luxury — they're roughly equivalent to a free productivity upgrade, and a $40 IKEA roller blind is enough to do the job.\n\n**Sleep hygiene myths to spend less energy on.**\n\nThe \"no screens an hour before bed\" rule has weaker evidence than its popularity suggests — for most people, what you watch matters more than the screen itself, and a gentle show in bed is fine. The \"no caffeine after 2pm\" rule is real and worth following — caffeine has a 5-6 hour half-life, longer in some people. Magnesium, melatonin, and weighted blankets help some people and not others; if you try one, give it three weeks and notice honestly.\n\n**Movement, without a gym.**\n\nGym membership is the most expensive and least necessary form of movement for most people in their first year. The free options in Melbourne are excellent.\n\n- **Running.** Pick a 4-5km loop near your place and walk it first to learn it. The Tan around the Botanic Gardens, the Capital City Trail along the Yarra, Princes Park in Carlton, Albert Park Lake — Melbourne has more accessible loops than most cities its size.\n- **Outdoor pools.** $7-9 entry. Fitzroy Pool, Carlton Baths, Northcote Aquatic Centre, MSAC. Cheaper than a gym, kinder than running.\n- **Yoga in parks.** Free yoga classes in summer at the Botanic Gardens, Edinburgh Gardens (Fitzroy North), and a few City of Melbourne parks. Search \"free yoga Melbourne [season]\" closer to the time.\n- **Free fitness apps.** Down Dog, Nike Training Club, and the BBC's *Couch to 5K* are all free or very low cost and don't require a gym.\n\nThe minimum dose that matters: two or three sessions a week of anything that elevates your heart rate for twenty minutes. That's it. The threshold for benefit is much lower than fitness culture suggests.\n\n**Disconnecting, without making it a religion.**\n\nYou don't need a digital detox. You need a few small frictions in the right places.\n\n- **Charge your phone in another room overnight.** This single change does more than any wellbeing app.\n- **Have at least one place at home that's phone-free.** A chair you read in. The kitchen during dinner.\n- **Walk somewhere familiar without your phone, occasionally.** The walk to the shops. The route around the block. Notice what you notice when you don't have a screen to default to.\n\nYou're not trying to be virtuous. You're trying to give your attention enough room to settle, which it can't do when something in your hand is constantly asking for it.\n\n### The bit nobody mentions\n\nIf you do these three things adequately — consistent sleep, two or three sessions of movement a week, a phone-free hour or two a day — and you're still feeling worse than you'd expect, that's information. It means what's going on is more than maintenance. It's the cue to go back to the *When to See a Psych* guide and treat the next step seriously.\n\nThese habits are not a substitute for therapy or medication when those are what the situation calls for. They are the floor that lets the rest work."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "When you're ready",
+      "value": "→ Find parks, pools and fitness spaces near you (opens Near Me → Health & Wellbeing and Social & Belonging)"
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Up next",
+      "value": "Finding Your Community in Melbourne — because social connection is one of the most effective wellbeing tools there is, and it deserves its own guide."
+    }
+  ]
+}

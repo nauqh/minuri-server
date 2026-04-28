@@ -1,0 +1,55 @@
+{
+  "id": 15,
+  "slug": "building-a-local-routine",
+  "title": "Building a Local Routine That Feels Like Yours",
+  "summary": "Turn repeated places and rhythms into a stable sense of home.",
+  "arc": "month-1",
+  "arcOrder": 3,
+  "topic": "getting-around",
+  "readingTimeMin": 3,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/getting-around/building-a-local-routine.json",
+  "nextGuideSlug": "finding-your-community",
+  "searchTerms": [
+    "routine",
+    "local",
+    "habit",
+    "belonging"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-building-a-local-routine/640/420",
+  "nearMeDeeplink": "/near-me?topic=getting-around&from=building-a-local-routine",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "You notice your daily route now feels familiar instead of foreign."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Repetition starts to feel comforting instead of limiting."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Belonging is often built by routine before it is felt emotionally."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Create three place anchors across your week: movement, nourishment, and connection.\n\nKeep the anchors stable for six weeks before changing them."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find parks, paths, and neighborhood hubs near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "You have finished this arc. Revisit any chapter whenever life shifts again."
+    }
+  ]
+}
