@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query
 
-from ..config import get_settings
 from ..database import DbSession
+from ..schemas.near_me import NearbyInterestListResponse
 from ..services.near_me import NearMeServiceError, search_near_me
 from ..services.population_service import get_population_service
 
@@ -11,14 +11,14 @@ router = APIRouter(
 )
 
 
-@router.get("/nearby-interest")
+@router.get("/nearby-interest", response_model=NearbyInterestListResponse)
 async def get_nearby_interest(
-    query: str = Query(..., min_length=1),
-    location: str = Query("Melbourne"),
+    suburb: str = Query(..., min_length=1),
+    query: str = Query("cheap eats & groceries", min_length=1),
 ):
-    _ = get_settings()
     try:
-        return search_near_me(query=query, location=location)
+        results = search_near_me(query=query, suburb=suburb)
+        return {"suburb": suburb, "query": query, "results": results}
     except NearMeServiceError as exc:
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 

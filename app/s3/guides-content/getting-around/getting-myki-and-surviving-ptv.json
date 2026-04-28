@@ -1,0 +1,61 @@
+{
+  "id": 3,
+  "slug": "getting-myki-and-surviving-ptv",
+  "title": "Getting a Myki & Surviving PTV",
+  "summary": "Learn the minimum transport system knowledge to move confidently.",
+  "arc": "day-1",
+  "arcOrder": 2,
+  "topic": "getting-around",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/getting-around/getting-myki-and-surviving-ptv.json",
+  "nextGuideSlug": "finding-a-gp-before-you-need-one",
+  "searchTerms": [
+    "myki",
+    "ptv",
+    "tram",
+    "train",
+    "free tram zone"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Study Melbourne transport guide",
+      "href": "https://studymelbourne.vic.gov.au/living-here/transport/guide-to-public-transportation"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-getting-myki-and-surviving-ptv/640/420",
+  "nearMeDeeplink": "/near-me?topic=getting-around&from=getting-myki-and-surviving-ptv",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "First commute. Everyone taps through and you are still decoding zones and platforms."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Public transport feels simple for everyone else and chaotic for you."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Most first-week transport stress disappears once one recurring route is stable."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Set up Myki, save your top-up pattern, and rehearse your most important weekly route.\n\nUse the Free Tram Zone and cap rules to avoid unnecessary spending."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find stations, tram stops, and top-up points near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Finding a GP Before You Need One - before a bad day becomes a crisis."
+    }
+  ]
+}

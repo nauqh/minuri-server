@@ -1,0 +1,60 @@
+{
+  "id": 11,
+  "slug": "making-friends-in-a-city-where-everyones-busy",
+  "title": "Making Friends in a City Where Everyone's Busy",
+  "summary": "Turn repeated contact into real social momentum.",
+  "arc": "week-1",
+  "arcOrder": 7,
+  "topic": "social-belonging",
+  "readingTimeMin": 5,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/social-belonging/making-friends-in-a-city-where-everyones-busy.json",
+  "nextGuideSlug": null,
+  "searchTerms": [
+    "friendship",
+    "community",
+    "meetup",
+    "third place"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Headspace",
+      "href": "https://headspace.org.au"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-making-friends-in-a-city-where-everyones-busy/640/420",
+  "nearMeDeeplink": "/near-me?topic=social-belonging&from=making-friends-in-a-city-where-everyones-busy",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "You have met people, but none of those chats turned into actual friendships."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "You are social but still feel socially unanchored."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Friendship is repetition plus low-pressure follow-up, not one perfect event."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Engineer repeat proximity with recurring groups and a shared weekly slot.\n\nConvert good conversations into lightweight next plans quickly."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find clubs, groups, and community spaces near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: The Homesickness Nobody Warns You About - when connection is growing but grief remains."
+    }
+  ]
+}

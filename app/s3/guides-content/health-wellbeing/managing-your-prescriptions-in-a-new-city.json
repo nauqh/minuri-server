@@ -1,0 +1,61 @@
+{
+  "id": 16,
+  "slug": "managing-your-prescriptions-in-a-new-city",
+  "title": "Managing Your Prescriptions in a New City",
+  "summary": "Australian medication systems are simpler than they look once you understand PBS, eScripts, and renewals.",
+  "arc": "week-1",
+  "arcOrder": 5,
+  "topic": "health-wellbeing",
+  "readingTimeMin": 5,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/health-wellbeing/managing-your-prescriptions-in-a-new-city.json",
+  "nextGuideSlug": "finding-your-way-around-melbourne-in-week-one",
+  "searchTerms": [
+    "prescriptions",
+    "pbs",
+    "pharmacy",
+    "electronic script",
+    "telehealth"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Healthdirect",
+      "href": "https://www.healthdirect.gov.au"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-managing-your-prescriptions-in-a-new-city/640/420",
+  "nearMeDeeplink": "/near-me?topic=health-wellbeing&from=managing-your-prescriptions-in-a-new-city",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "You're running low on a medication you take every day. The script you brought from home is running out, you don't have a GP yet in Melbourne, and the pharmacist has just said the words \"PBS\" to you in a tone that suggests you should know what that means."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Medication logistics works at home because someone else set it up years ago. In a new city, the whole quiet system that used to run in the background — repeat scripts, the pharmacist who knew you, the doctor who'd renew without a fuss — is suddenly, unexpectedly, on you."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "What nobody told you",
+      "value": "Under the **Pharmaceutical Benefits Scheme** (PBS), most common medications cost between $7.70 and $31.60 in 2026, regardless of what they might cost without subsidy. Concession card holders pay even less.\n\nYou just need a current Australian prescription. The cost most newcomers brace for is rarely the cost they actually pay."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How it actually works",
+      "value": "**Electronic prescriptions are now standard.**\n\nAustralian scripts are mostly electronic — a token sent to your phone via text or email when your GP writes the prescription. You take that token to any pharmacy in the country. They scan it. You pay. You leave.\n\nThe token is reusable in a specific way: if your script has repeats (most do), the same token can be redeemed at any pharmacy each time. You don't have to go back to the same one.\n\n**What PBS means for you.**\n\nThe PBS is the government scheme that subsidises the cost of about 5,000 medications. If your medication is on the PBS list, you'll pay one of two flat rates — about **$31.60 as a general patient** or **$7.70 as a concession card holder** — regardless of what the medication's actual market price is.\n\nIf your medication is not on the PBS, you'll pay the full price the pharmacy charges, which can vary. Worth checking before you run out.\n\n**If you brought medication from home and need to continue.**\n\nDon't wait until you're at zero. As soon as you have a Medicare card and a GP, book an appointment specifically to transfer your prescriptions. Bring the original packaging or a recent script. The GP will issue an Australian equivalent.\n\nIf your medication isn't available in Australia (rare for common meds, more common for some specialised ones), the GP can usually identify a local equivalent or, in unusual cases, apply for a Special Access Scheme listing. Don't ration your supply hoping the system will sort itself out.\n\n**Finding a 24-hour pharmacy.**\n\nMost Melbourne suburbs have a 24-hour pharmacy within reasonable distance. Chemist Warehouse, Priceline, and a number of independents run extended hours. Healthdirect's Service Finder lists them.\n\nFor genuinely urgent prescription needs out of hours — you've run out, you can't reach a GP, you need a few days' supply to get you through — pharmacists in Australia can sometimes provide an **emergency supply** of certain medications without a prescription, depending on the medication and the circumstances. Worth knowing the option exists, even if it's a last resort.\n\n**Telehealth for prescription renewals.**\n\nIf you've been seeing a GP in Australia and just need a routine renewal of an ongoing medication, telehealth is a clean option. Services like InstantScripts, Hub Health, and many regular GP clinics offer 10-15 minute video consults for around $20-50, with a script issued electronically by the end of the call. Not appropriate for new conditions or for medications that need physical examination, but for the contraceptive pill, allergy meds, or stable mental health prescriptions, it's faster than a clinic visit.\n\n### The bit nobody mentions\n\nPharmacists in Australia are more clinically trained than the role often implies. If you're not sure whether something needs a doctor or a pharmacist, ask the pharmacist first — they'll tell you which way to send you.\n\nA pharmacist can also flag interactions between your existing medications and anything new you're prescribed, which matters more than you might think when you're moving between healthcare systems and rebuilding a treatment history from scratch."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "When you're ready",
+      "value": "→ Find pharmacies near you (opens Near Me → Health & Wellbeing → Clinics)"
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Up next",
+      "value": "When to See a Psych, a Counsellor, or a Friend (Arc 3) — if it's mental health medication you're managing, the therapy side of the picture often becomes part of the same conversation."
+    }
+  ]
+}

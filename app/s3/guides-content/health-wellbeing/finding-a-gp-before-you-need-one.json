@@ -1,0 +1,60 @@
+{
+  "id": 4,
+  "slug": "finding-a-gp-before-you-need-one",
+  "title": "Finding a GP Before You Need One",
+  "summary": "Most newcomers do not realise they can set up healthcare in one calm hour before they ever need urgent care.",
+  "arc": "day-1",
+  "arcOrder": 3,
+  "topic": "health-wellbeing",
+  "readingTimeMin": 6,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/health-wellbeing/finding-a-gp-before-you-need-one.json",
+  "nextGuideSlug": "crisis-lines-you-can-actually-call",
+  "searchTerms": [
+    "gp",
+    "doctor",
+    "bulk billing",
+    "healthdirect"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Healthdirect",
+      "href": "https://www.healthdirect.gov.au"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-finding-a-gp-before-you-need-one/640/420",
+  "nearMeDeeplink": "/near-me?topic=health-wellbeing&from=finding-a-gp-before-you-need-one",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "It's 6am. You've been in Melbourne for three weeks. You wake up with a 39-degree fever and a throat that feels like gravel, and your first instinct is to reach for your phone and call your mum's doctor — the one you've been going to since you were nine — and then you remember you're 700 kilometres from that clinic, and you don't even know where the nearest doctor is, and the panic of being sick alone in a place you don't quite know yet has its own particular flavour."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Most of us never had to find our own GP. Someone else did it for us, years ago, and it stayed sorted. Doing it for the first time at twenty-something, while sick, in a new city, can feel like discovering the floor isn't where you thought it was.\n\nThere's a specific shame in not knowing this — like everyone else got the manual. They didn't. They just got further from the moment of figuring it out than you currently are."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "What nobody told you",
+      "value": "In Australia, finding a GP isn't like finding a specialist. You don't need a referral. You don't need private health insurance. And if you pick a bulk-billing clinic, **it costs you nothing.**\n\nThat last sentence is the one to stop on. Most of the cost-of-healthcare anxiety newcomers carry is imported — from countries where seeing a doctor is a financial decision. In Australia, with Medicare and a bulk-billing clinic, it isn't."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How it actually works",
+      "value": "**1. Get your Medicare card sorted first if you haven't.** This is the document that makes the rest of this work. If you're an Australian citizen or permanent resident, enrolling takes about twenty minutes online through Services Australia. International students with the right visa class are also eligible for Medicare via reciprocal agreements, depending on country — check Services Australia for the specifics.\n\n**2. Use Healthdirect to find a clinic near you.** Healthdirect.gov.au is the official government health-services finder. Search \"GP\" and your suburb, and you'll see a map of nearby practices, opening hours, and crucially — whether they bulk-bill.\n\n**3. Filter for bulk-billing.** A bulk-billing clinic is one that accepts Medicare's payment as full payment. You hand over your Medicare card. They claim Medicare directly. You pay nothing. Not every clinic does this for every patient or every service, but many still do for standard consultations, especially for students and concession card holders.\n\n**4. Book online or call.** Most clinics use HotDoc or HealthEngine for bookings — both apps work fine for setting up first appointments. Same-day slots are common; you don't need to wait a week.\n\n**5. What to bring to your first appointment.**\n- Your Medicare card\n- Photo ID (passport or licence)\n- Any current prescriptions or medications you're on\n- A list, if you have ongoing conditions, of dates and treatments\n- A few minutes to fill in a new-patient form\n\nThat's it. The whole thing takes ten minutes once you're in the room.\n\n### The bit nobody mentions\n\nYou don't need to wait until you're sick. The smartest thing to do in your first month — before the fever, before the rough night — is enrol at a bulk-billing clinic in your suburb when you're well. Walk in. Do the paperwork. Have a quick check-in. When you do get sick, the system already knows you, and there's no friction at the worst possible moment.\n\nThis is the version of yourself you're being kind to: the one at 6am, three weeks from now, who would much rather pick up the phone than fill out a form with a fever."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "When you're ready",
+      "value": "→ Find a bulk-billing GP near you (opens Near Me, filtered to Health & Wellbeing → Clinics, suburb pre-filled)"
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Up next",
+      "value": "Crisis Lines You Can Actually Call — for the moments when a GP appointment in three days isn't soon enough."
+    }
+  ]
+}

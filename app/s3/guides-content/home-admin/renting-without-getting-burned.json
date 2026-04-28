@@ -1,0 +1,60 @@
+{
+  "id": 6,
+  "slug": "renting-without-getting-burned",
+  "title": "Renting Without Getting Burned",
+  "summary": "Reduce rental friction by understanding what actually protects you.",
+  "arc": "month-1",
+  "arcOrder": 2,
+  "topic": "home-admin",
+  "readingTimeMin": 5,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/home-admin/renting-without-getting-burned.json",
+  "nextGuideSlug": "building-a-local-routine",
+  "searchTerms": [
+    "lease",
+    "bond",
+    "condition report",
+    "rights"
+  ],
+  "sourceLinks": [
+    {
+      "label": "Youth Central renting",
+      "href": "https://www.youthcentral.vic.gov.au/housing/renting-and-sharehousing/signing-lease"
+    }
+  ],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-renting-without-getting-burned/640/420",
+  "nearMeDeeplink": "/near-me?topic=home-admin&from=renting-without-getting-burned",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "At inspection four, everyone else has a folder and a system, and you do not."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "The rental process feels biased toward people who already know hidden rules."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Your rental application is a product package. Presentation changes outcomes."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Prepare one reusable bundle: IDs, income proof, references, and a short cover note.\n\nDocument condition reports early and verify bond lodgement to protect future disputes."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find rental support and admin services near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Medicare, Bulk-Billing & Mental Health Care Plans - your health admin layer."
+    }
+  ]
+}

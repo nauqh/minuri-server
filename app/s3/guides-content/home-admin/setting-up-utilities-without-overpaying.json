@@ -1,0 +1,55 @@
+{
+  "id": 9,
+  "slug": "setting-up-utilities-without-overpaying",
+  "title": "Setting Up Utilities Without Overpaying",
+  "summary": "Avoid default-plan traps in power, internet, and essential services.",
+  "arc": "week-1",
+  "arcOrder": 2,
+  "topic": "home-admin",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": false,
+  "markdownPath": "/guides-content/home-admin/setting-up-utilities-without-overpaying.json",
+  "nextGuideSlug": "budgeting-on-what-you-actually-earn",
+  "searchTerms": [
+    "utilities",
+    "electricity",
+    "internet",
+    "energy compare"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-setting-up-utilities-without-overpaying/640/420",
+  "nearMeDeeplink": "/near-me?topic=home-admin&from=setting-up-utilities-without-overpaying",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "A surprisingly high bill arrives before you know your plan type."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "Utilities feel fixed and non-negotiable when they are not."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "Default plans are convenience products, not value products."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Compare providers once, set calendar reminders for annual checks, and record account numbers in one secure place.\n\nCheck usage versus supply charges to avoid false savings assumptions."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find home and utility service touchpoints near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Cooking 5 Meals You'll Actually Eat - stable routines make budgets sustainable."
+    }
+  ]
+}

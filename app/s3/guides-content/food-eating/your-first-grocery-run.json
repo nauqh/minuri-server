@@ -1,0 +1,56 @@
+{
+  "id": 1,
+  "slug": "your-first-grocery-run",
+  "title": "Your First Grocery Run",
+  "summary": "Build a low-stress first-week food system without overspending.",
+  "arc": "day-1",
+  "arcOrder": 1,
+  "topic": "food-eating",
+  "readingTimeMin": 4,
+  "isPublished": true,
+  "isFeatured": true,
+  "markdownPath": "/guides-content/food-eating/your-first-grocery-run.json",
+  "nextGuideSlug": "getting-myki-and-surviving-ptv",
+  "searchTerms": [
+    "grocery",
+    "budget",
+    "woolworths",
+    "coles",
+    "aldi"
+  ],
+  "sourceLinks": [],
+  "thumbnailUrl": "https://picsum.photos/seed/minuri-your-first-grocery-run/640/420",
+  "nearMeDeeplink": "/near-me?topic=food-eating&from=your-first-grocery-run",
+  "sections": [
+    {
+      "sectionKey": "moment",
+      "title": "The Moment",
+      "value": "Day two. You are standing in a supermarket aisle with no reliable price memory and no food plan."
+    },
+    {
+      "sectionKey": "feeling",
+      "title": "The Feeling",
+      "value": "You are not confused about food. You are overloaded by decisions without context."
+    },
+    {
+      "sectionKey": "reveal",
+      "title": "The Reveal",
+      "value": "You can eat well in your first week with a tiny repeat list. Brand familiarity is not the same as value."
+    },
+    {
+      "sectionKey": "how-it-works",
+      "title": "How It Actually Works",
+      "value": "Start with 10-12 essentials you can combine into 3 meals. Use unit pricing, not packaging size.\n\nPick one supermarket for routine shopping and one backup store for low-stock days."
+    },
+    {
+      "sectionKey": "bridge",
+      "title": "The Bridge",
+      "value": "When you're ready, find supermarkets and markets near you."
+    },
+    {
+      "sectionKey": "next-chapter",
+      "title": "Next Chapter",
+      "value": "Next: Getting a Myki and surviving PTV — so you can move without guessing."
+    }
+  ]
+}
