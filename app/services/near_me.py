@@ -7,6 +7,46 @@ class NearMeServiceError(Exception):
     pass
 
 
+VALID_TOPICS = {
+    "food-eating",
+    "getting-around",
+    "health-wellbeing",
+    "home-admin",
+    "social-belonging",
+}
+
+QUERY_MAP: dict[tuple[str, str], str] = {
+    ("food-eating", "food-dining"): "cheap restaurants cafes food",
+    ("food-eating", "groceries"): "supermarkets grocery stores",
+    ("getting-around", "public-transit"): "train station tram stop",
+    ("getting-around", "cycling"): "bus stop bicycle hire station",
+    ("health-wellbeing", "gp-clinics"): "GP medical centre bulk billing clinic",
+    ("health-wellbeing", "mental-health"): "psychologist counsellor mental health service",
+    ("home-admin", "services"): "government services community centre settlement support",
+    ("home-admin", "libraries"): "public library",
+    ("social-belonging", "community-spaces"): "park community centre multicultural centre free",
+    ("social-belonging", "social-venues"): "bar pub social club",
+}
+
+_TOPIC_FALLBACK: dict[str, str] = {
+    "food-eating": "cheap restaurants cafes groceries food",
+    "getting-around": "train tram bus stop bicycle hire station",
+    "health-wellbeing": "GP medical centre bulk billing clinic mental health",
+    "home-admin": "government services community centre library",
+    "social-belonging": "park community centre bar pub social club",
+}
+
+_DEFAULT_QUERY = "cheap restaurants cafes food"
+
+
+def resolve_query(topic: str | None, subtype: str | None) -> str:
+    if topic is None:
+        return _DEFAULT_QUERY
+    if subtype is None or subtype == "all":
+        return _TOPIC_FALLBACK.get(topic, _DEFAULT_QUERY)
+    return QUERY_MAP.get((topic, subtype), _TOPIC_FALLBACK.get(topic, _DEFAULT_QUERY))
+
+
 def _extract_places(payload: dict) -> list[dict]:
     local_results = payload.get("local_results", [])
     if isinstance(local_results, dict):
@@ -33,16 +73,14 @@ def _normalize_place(place: dict) -> dict:
     }
 
 
-def search_near_me(query: str, suburb: str = "Melbourne") -> list[dict]:
-    """
-    Fetch nearby interest details from SerpApi Google Local results.
-
-    Example:
-    query="Cheap eats & groceries", suburb="Clayton South"
-    """
+def search_near_me(
+    suburb: str,
+    topic: str | None = None,
+    subtype: str | None = None,
+) -> list[dict]:
+    query = resolve_query(topic, subtype)
     try:
-        search_query = query if " near " in query.lower(
-        ) else f"{query} near {suburb}"
+        search_query = f"{query} near {suburb}"
         settings = get_settings()
         client = serpapi.Client(api_key=settings.serpapi_api_key)
         payload = client.search(
@@ -63,12 +101,9 @@ def search_near_me(query: str, suburb: str = "Melbourne") -> list[dict]:
 
 
 if __name__ == "__main__":
-    test_suburb = "Clayton South"
-    test_query = "cheap eats & groceries"
-
     try:
         import json
-        items = search_near_me(query=test_query, suburb=test_suburb)
+        items = search_near_me(suburb="Clayton South", topic="food-eating", subtype="food-dining")
         with open("items.json", "w") as f:
             json.dump(items, f)
     except NearMeServiceError as exc:
