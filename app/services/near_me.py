@@ -85,13 +85,12 @@ def search_near_me(
         client = serpapi.Client(api_key=settings.serpapi_api_key)
         payload = client.search(
             {
-                "engine": "google",
+                "engine": "google_maps",
+                "type": "search",
                 "q": search_query,
-                "location": "Melbourne, Victoria, Australia",
-                "gl": "au",
-                "google_domain": "google.com.au",
+                "ll": "@-37.8136,144.9631,12z",
                 "hl": "en",
-                "device": "desktop",
+                "gl": "au",
             }
         )
         places = _extract_places(payload)
@@ -103,7 +102,8 @@ def search_near_me(
 if __name__ == "__main__":
     try:
         import json
-        items = search_near_me(suburb="Clayton South", topic="food-eating", subtype="food-dining")
+        items = search_near_me(suburb="Clayton South",
+                               topic="food-eating", subtype="food-dining")
         with open("items.json", "w") as f:
             json.dump(items, f)
     except NearMeServiceError as exc:
