@@ -1,3 +1,4 @@
+import re
 import serpapi
 
 from ..config import get_settings
@@ -57,6 +58,13 @@ def _extract_places(payload: dict) -> list[dict]:
     return []
 
 
+def _upscale_thumbnail(url: str | None) -> str | None:
+    if not url:
+        return url
+    # Google encodes size as =w128-h92-k-no; bump to 800×600 for clarity
+    return re.sub(r"=w\d+-h\d+", "=w800-h600", url)
+
+
 def _normalize_place(place: dict) -> dict:
     return {
         "title": place.get("title"),
@@ -67,7 +75,7 @@ def _normalize_place(place: dict) -> dict:
         "price": place.get("price"),
         "open_state": place.get("hours"),
         "description": place.get("description"),
-        "thumbnail": place.get("thumbnail"),
+        "thumbnail": _upscale_thumbnail(place.get("thumbnail")),
         "place_id": place.get("place_id"),
         "gps_coordinates": place.get("gps_coordinates"),
     }
