@@ -106,6 +106,30 @@ def search_near_me(
     except Exception as exc:
         raise NearMeServiceError(str(exc)) from exc
 
+def search_near_me_events(
+    suburb: str,
+    topic: str | None = None,
+    subtype: str | None = None,
+) -> list[dict]:
+    query = resolve_query(topic, subtype)
+    try:
+        search_query = f"{query} events near {suburb}"
+        settings = get_settings()
+        client = serpapi.Client(api_key=settings.serpapi_api_key)
+        payload = client.search(
+            {
+                "engine": "google_events",
+                "type": "search",
+                "q": search_query,
+                "ll": "@-37.8136,144.9631,12z",
+                "hl": "en",
+                "gl": "au",
+            }
+        )
+        places = _extract_places(payload)
+        return [_normalize_place(place) for place in places]
+    except Exception as exc:
+        raise NearMeServiceError(str(exc)) from exc
 
 if __name__ == "__main__":
     try:
