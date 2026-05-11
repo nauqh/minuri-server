@@ -57,6 +57,14 @@ def _extract_places(payload: dict) -> list[dict]:
         return local_results
     return []
 
+def _extract_events(payload: dict) -> list[dict]:
+    events_results = payload.get("events_results", [])
+    if isinstance(events_results, dict):
+        events = events_results.get("events", [])
+        return events if isinstance(events, list) else []
+    if isinstance(events_results, list):
+        return events_results
+    return []
 
 def _upscale_thumbnail(url: str | None) -> str | None:
     if not url:
@@ -80,6 +88,17 @@ def _normalize_place(place: dict) -> dict:
         "gps_coordinates": place.get("gps_coordinates"),
     }
 
+def _normalize_event(event: dict) -> dict:
+    return {
+        "title": event.get("title"),
+        "date": event.get("date"),
+        "address": event.get("address"),
+        "description": event.get("description"),
+        "link": event.get("link"),
+        "event_location_map": event.get("event_location_map"),
+        "thumbnail": _upscale_thumbnail(event.get("thumbnail")),
+        "venue": event.get("venue"),
+    }
 
 def search_near_me(
     suburb: str,
@@ -126,8 +145,8 @@ def search_near_me_events(
                 "gl": "au",
             }
         )
-        places = _extract_places(payload)
-        return [_normalize_place(place) for place in places]
+        events = _extract_events(payload)
+        return [_normalize_event(event) for event in events]
     except Exception as exc:
         raise NearMeServiceError(str(exc)) from exc
 
