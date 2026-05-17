@@ -8,6 +8,7 @@ class Settings(BaseSettings):
 
     serpapi_api_key: str = Field(alias="SERPAPI_API_KEY")
     db_connection: str = Field(alias="DB_CONNECTION")
+    openrouter_api_key: str = Field(alias="OPEN_ROUTER_API")
 
 
 @lru_cache

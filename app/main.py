@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import api, suburb
+from .routers import api, journey, suburb
 from . import models
 from .database import engine
 
@@ -22,6 +22,7 @@ app.add_middleware(
 
 app.include_router(api.router)
 app.include_router(suburb.router)
+app.include_router(journey.router)
 
 
 @app.get("/")
