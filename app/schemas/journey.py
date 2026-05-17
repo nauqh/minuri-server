@@ -37,10 +37,8 @@ class DayPlan(BaseModel):
     theme: str = Field(description="Short day theme, e.g. 'Survive & Land'")
     short_label: str = Field(description="Stepper nav label, max 8 characters")
     narrative: str = Field(description="1-2 sentences personalized to the user's moment. Not generic advice.")
-    primary_topic: GuideTopicSlug
-    secondary_topics: Annotated[list[GuideTopicSlug], Field(max_length=1)]
-    primary_guides: Annotated[list[str], Field(min_length=1, max_length=2, description="Slugs from primary_topic only")]
-    secondary_guides: Annotated[list[str], Field(max_length=1, description="Slugs from secondary_topics only")]
+    topic: GuideTopicSlug
+    guides: Annotated[list[str], Field(min_length=3, max_length=4, description="Guide slugs for this day's topic only")]
     tasks: Annotated[list[str], Field(min_length=1, max_length=2, description="Concrete action sentences, specific to the user's situation")]
     memory_line: str = Field(description="Past-tense, max 12 words. Stored on identity card when day is completed.")
     stamp_label: Optional[str] = Field(default=None, description="Badge label if day earns a stamp. Only set for days 1 and 7. Null for all other days.")

@@ -7,8 +7,7 @@ Guides by topic — use only these slugs, never invent:
 {guides_by_topic}
 
 Rules:
-- primary_guides: slugs from primary_topic only
-- secondary_guides: slugs from secondary_topics only
+- guides: 3-4 slugs from the day's topic only, never invent
 - No slug repeated across all 7 days
 - narrative: user's specific moment, not generic
 - tasks: concrete, specific to their situation
