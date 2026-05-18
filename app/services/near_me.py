@@ -89,15 +89,18 @@ def _normalize_place(place: dict) -> dict:
     }
 
 def _normalize_event(event: dict) -> dict:
+    raw_date = event.get("date")
+    date = raw_date if isinstance(raw_date, dict) else {"when": raw_date}
+    raw_venue = event.get("venue")
+    venue = raw_venue if isinstance(raw_venue, dict) else None
     return {
         "title": event.get("title"),
-        "date": event.get("date"),
+        "date": date,
         "address": event.get("address"),
         "description": event.get("description"),
         "link": event.get("link"),
-        "event_location_map": event.get("event_location_map"),
         "thumbnail": _upscale_thumbnail(event.get("thumbnail")),
-        "venue": event.get("venue"),
+        "venue": venue,
     }
 
 def search_near_me(
@@ -125,24 +128,25 @@ def search_near_me(
     except Exception as exc:
         raise NearMeServiceError(str(exc)) from exc
 
+VALID_DATE_FILTERS = {"today", "week", "next_month"}
+_DATE_FILTER_DEFAULT = "week"
+
+
 def search_near_me_events(
     suburb: str,
-    topic: str | None = None,
-    subtype: str | None = None,
+    date_filter: str = _DATE_FILTER_DEFAULT,
 ) -> list[dict]:
-    query = resolve_query(topic, subtype)
     try:
-        search_query = f"{query} events near {suburb}"
         settings = get_settings()
         client = serpapi.Client(api_key=settings.serpapi_api_key)
         payload = client.search(
             {
                 "engine": "google_events",
-                "type": "search",
-                "q": search_query,
-                "ll": "@-37.8136,144.9631,12z",
+                "q": f"social community events {suburb} Melbourne",
+                "location": "Melbourne, Victoria, Australia",
                 "hl": "en",
                 "gl": "au",
+                "htichips": f"date:{date_filter}",
             }
         )
         events = _extract_events(payload)
